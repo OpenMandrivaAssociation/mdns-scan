@@ -1,0 +1,21 @@
+--- mdns-scan-0.4/Makefile	2005-01-23 21:43:19.000000000 +0000
++++ mdns-scan-0.4/Makefile	2012-01-26 17:25:45.610119260 +0000
+@@ -1,7 +1,7 @@
+ VERSION=0.4
+ TARFILE=mdns-scan-$(VERSION).tar.gz
+ DISTDIR=mdns-scan-$(VERSION)/
+-DISTFILES=Makefile mdns-scan.1 dns.c dns.h mdns-scan.c query.c query.h util.h util.c README LICENSE debian/control debian/compat debian/changelog debian/copyright debian/rules debian/dirs
++DISTFILES=Makefile mdns-scan.1 dns.c dns.h mdns-scan.c query.c query.h util.h util.c README LICENSE mdns-scan.1 debian/control debian/compat debian/changelog debian/copyright debian/rules debian/dirs
+ CFLAGS=-Wall -W -g -O0 -pipe
+ 
+ mdns-scan: mdns-scan.o dns.o query.o util.o
+@@ -19,7 +19,8 @@ $(TARFILE): $(DISTFILES)
+ 
+ install:
+ 	install -s mdns-scan $(DESTDIR)/usr/bin/mdns-scan
+-
++	install -s mdns-scan $(DESTDIR)/usr/share/man/man1/mdns-scan.1
++	
+ clean:
+ 	rm -f mdns-scan *.o *.tar.gz
+ 	rm -rf mdns-scan-$(VERSION)
