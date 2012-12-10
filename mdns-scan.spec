@@ -35,3 +35,13 @@ mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_mandir}/man1
 %makeinstall_std
 
+
+
+%changelog
+* Thu Jan 26 2012 Guilherme Moro <guilherme@mandriva.com> 0.4-1
++ Revision: 769176
+- imported package mdns-scan
+
+
+* Thu Jan 26 2012 Zé <ze@mandriva.org> 4.8.40-6-mde
+- first package
