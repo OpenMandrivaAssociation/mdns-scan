@@ -1,7 +1,7 @@
 Summary:	Tool for scanning mDNS/DNS-SD published services in local network
 Name:		mdns-scan
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Networking/Other
 Url:		http://freecode.com/projects/mdns-scan
