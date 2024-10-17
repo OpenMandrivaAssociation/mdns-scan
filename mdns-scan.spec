@@ -4,7 +4,7 @@ Version:	0.5
 Release:	2
 License:	GPLv2+
 Group:		Networking/Other
-Url:		http://freecode.com/projects/mdns-scan
+Url:		https://freecode.com/projects/mdns-scan
 Source0:	http://0pointer.de/lennart/projects/mdns-scan/mdns-scan-%{version}.tar.gz
 
 %description
